@@ -1,8 +1,25 @@
 aid: mediaspectrum
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mediaspectrum.png
 name: Mediaspectrum
-description: Mediaspectrum is a company surfaced as a portfolio company of insight-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Mediaspectrum is a cloud-based SaaS provider of multichannel advertising, content
+  management, and publishing software for media companies and publishers. Founded in 2001 and
+  headquartered in Miami, its platform manages the full advertising lifecycle -- proposal generation,
+  packaging, scheduling, rating, workflow, trafficking, optimization, and billing -- alongside an
+  integrated CRM and the ContentWatch content management system spanning print, web, mobile, video,
+  social, and broadcast channels. The company raised a $35.8M investment from Insight Venture Partners
+  in 2013 and counts Gannett, Dow Jones, and Trinity Mirror among its clients. No public API, developer
+  portal, or SDKs are published as of this enrichment pass.
 url: https://raw.githubusercontent.com/api-evangelist/mediaspectrum/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Advertising
+- Publishing
+- Content Management
+- Media
+- SaaS
+- Advertising Technology
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mediaspectrum-domain-security.yml
 - type: Website
   url: http://www.mediaspectrum.net/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
