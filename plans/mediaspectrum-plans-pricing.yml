@@ -1,0 +1,24 @@
+generated: '2026-08-12'
+method: searched
+source: https://mediaspectrum.net/ (full site walked via https://mediaspectrum.net/page-sitemap.xml)
+name: Mediaspectrum
+plan_count: 0
+currency: null
+plans: []
+note: >-
+  Mediaspectrum publishes no pricing of any kind. The Yoast page sitemap enumerates the entire
+  public site — 12 pages (home, contact, privacy policy, about, case studies, core-cloud,
+  digital-revenue, digital-paper, mobile-apps, content-management-system, ordermanagement) —
+  and none of them is a pricing or plans page; https://mediaspectrum.net/pricing/ returns 404.
+  The published call to action is contact-sales only: "the fastest way to get customized
+  information on Mediaspectrum solutions is to contact us now" (digital-revenue page), with
+  info@mediaspectrum.net and +1 786-264-2247 on the contact page. Enterprise licensing of a
+  privately-hosted platform, quoted per deal. No Pricing or Plans pointer is wired into
+  apis.yml, because an artifact recording an absence must not be scored as a published one.
+evidence:
+- url: https://mediaspectrum.net/pricing/
+  status: 404
+- url: https://mediaspectrum.net/page-sitemap.xml
+  status: 200
+- url: https://mediaspectrum.net/contact/
+  status: 200

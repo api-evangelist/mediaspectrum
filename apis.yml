@@ -29,7 +29,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-08-12'
 tags:
 - Company
 - Advertising
@@ -48,9 +48,51 @@ common:
 - type: DomainSecurity
   url: security/mediaspectrum-domain-security.yml
 - type: Website
-  url: http://www.mediaspectrum.net/
+  url: https://mediaspectrum.net/
+- type: LLMsTxt
+  url: llms/mediaspectrum-llms.txt
+- type: About
+  url: https://mediaspectrum.net/about-2/
+- type: CaseStudies
+  url: https://mediaspectrum.net/case-studies/
+- type: Contact
+  url: https://mediaspectrum.net/contact/
+- type: PrivacyPolicy
+  url: https://mediaspectrum.net/privacy-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/mediaspectrum-inc-/
+- type: Twitter
+  url: https://x.com/mediaspectrumus
+- type: Facebook
+  url: https://www.facebook.com/MediaspectrumUS/
 x-enrichment:
-  date: '2026-07-20'
+  date: '2026-08-12'
   status: minimal
-  artifacts_added: 1
+  artifacts_added: 3
   pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Mediaspectrum's entire public presence is a 12-page WordPress brochure site whose own Yoast
+    sitemap lists no developer, API, or pricing page; /developers, /api, /docs, /openapi.json,
+    /graphql, /mcp and all eight /.well-known/ paths return 404, the platform is sold as a
+    privately-hosted per-client "Core Cloud" deployment behind a contact-sales form, and the only
+    machine-readable surface on the domain is the marketing site's own WordPress core REST API
+    at /wp-json/.
+  evidence:
+  - url: https://mediaspectrum.net/page-sitemap.xml
+    status: 200
+  - url: https://mediaspectrum.net/developers
+    status: 404
+  - url: https://mediaspectrum.net/openapi.json
+    status: 404
+  - url: https://mediaspectrum.net/.well-known/agent-card.json
+    status: 404
+  - url: https://mediaspectrum.net/llms.txt
+    status: 404
+  - url: https://app.mediaspectrum.net/
+    status: 302
+  - url: https://ipad.mediaspectrum.net/Mediaspectrum/index.html
+    status: 404
+  checked: '2026-08-12'

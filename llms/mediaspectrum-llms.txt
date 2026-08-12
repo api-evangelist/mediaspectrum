@@ -1,0 +1,41 @@
+# Mediaspectrum
+
+> Mediaspectrum, Inc. is a cloud-based SaaS provider of multichannel advertising, content management, and publishing software for media companies and publishers. Founded in 2001 and headquartered in Miami Beach, Florida, its platform covers the advertising lifecycle — proposal generation, packaging, scheduling, rating, workflow, trafficking, optimization, and billing — alongside an integrated CRM and the ContentWatch content management system spanning print, web, mobile, video, social, and broadcast channels. The company took a $35.8M minority investment from Insight Venture Partners in 2013.
+
+**There is no public Mediaspectrum API.** As of 2026-08-12 the company publishes no developer portal, no API reference, no OpenAPI/AsyncAPI/GraphQL contract, no SDKs, no public repositories, and no `/.well-known/` documents. The products are delivered as privately-hosted, per-client cloud deployments ("Core Cloud"), and the only published path to the platform is a contact-sales form. Do not attempt to call a Mediaspectrum API on a customer's behalf — resolve integration questions through info@mediaspectrum.net.
+
+## Products
+
+- [Order Management](https://mediaspectrum.net/ordermanagement/): Multichannel ad order management with configure-price-quote (CPQ), guided selling, packaging, scheduling, rating, workflow, trafficking, optimization, and billing, plus an integrated CRM.
+- [Content Management (ContentWatch)](https://mediaspectrum.net/content-management-system/): Content management for print, web, mobile, video, social, and broadcast, with export/import/transform/normalize handling across connected platforms.
+- [Mobile Apps](https://mediaspectrum.net/mobile-apps/): Publisher mobile products covering dynamic content delivery, integrated advertising, and subscription management.
+- [Digital Paper](https://mediaspectrum.net/digital-paper/): ePaper replica edition delivered to phones, tablets, and websites.
+- [Digital Revenue](https://mediaspectrum.net/digital-revenue/): Digital advertising revenue services for publishers and agencies.
+- [Core Cloud (Infrastructure)](https://mediaspectrum.net/core-cloud/): Private, per-client cloud hosting in Tier 3+ data centers (New Jersey, USA and Frankfurt, Germany), with optional dedicated hardware hybridized into the private cloud.
+
+## Company
+
+- [Our Company](https://mediaspectrum.net/about-2/): Company background.
+- [Case Studies](https://mediaspectrum.net/case-studies/): Customer stories.
+- [Contact](https://mediaspectrum.net/contact/): Corporate HQ, 1688 Meridian Avenue, 7th Floor, Miami Beach, FL 33139 — info@mediaspectrum.net, +1 786-264-2247.
+- [Privacy Policy](https://mediaspectrum.net/privacy-policy/): Published privacy policy.
+- [LinkedIn](https://www.linkedin.com/company/mediaspectrum-inc-/)
+- [X](https://x.com/mediaspectrumus)
+- [Facebook](https://www.facebook.com/MediaspectrumUS/)
+
+## What was checked and not found
+
+- No developer portal or API reference: `/developers`, `/developer`, `/api`, `/api/v1`, `/docs`, `/api-docs`, `/redoc` — all HTTP 404.
+- No machine-readable contract: `/openapi.json`, `/openapi.yaml`, `/swagger.json`, `/v1/openapi.json`, `/graphql`, `/mcp` — all HTTP 404.
+- No `/.well-known/` documents: `security.txt`, `openid-configuration`, `oauth-authorization-server`, `oauth-protected-resource`, `api-catalog`, `ai-plugin.json`, `agent-card.json`, `agent.json` — all HTTP 404. See `well-known/mediaspectrum-well-known.yml`.
+- No published pricing or plans: `/pricing` is HTTP 404 and the site sitemap lists no pricing page. See `plans/mediaspectrum-plans-pricing.yml`.
+- No first-party packages on npm, PyPI, or RubyGems, and no Mediaspectrum GitHub organization.
+- No blog: `https://mediaspectrum.net/feed/` returns HTTP 200 with zero items.
+- The only machine-readable surface on the domain is the marketing site's own WordPress core REST API at `https://mediaspectrum.net/wp-json/` (WordPress 7.0.3). That is website infrastructure, not a Mediaspectrum product API, and it is not profiled as one.
+
+## Independent profile
+
+- [API Evangelist profile](https://raw.githubusercontent.com/api-evangelist/mediaspectrum/refs/heads/main/apis.yml): The `apis.yml` this file was generated from. This is a third-party profile; it is not operated or endorsed by Mediaspectrum.
+
+---
+Generated 2026-08-12 by the API Evangelist enrichment pipeline from `apis.yml` and live probes of https://mediaspectrum.net/. The provider serves no `llms.txt` of its own (`https://mediaspectrum.net/llms.txt` → HTTP 404).
